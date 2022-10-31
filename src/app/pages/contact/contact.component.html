@@ -1,0 +1,11 @@
+<h1>Tarea</h1>
+
+<div class="container">
+  <form [formGroup]="miformulario">
+    Email:
+    <input  type="text" class="form-control" formControlName="email" /> Mensaje:
+    <input type="text" class="form-control" formControlName="message" /> <br />
+    <button type="submit">Enviar</button>
+  </form>
+  {{ miformulario.value | json}}
+</div>
